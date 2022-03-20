@@ -4,7 +4,7 @@ node {
 
     stage ('Construindo a imagem podman do projeto Processador') {
         sh "echo construindo a imagem..."
-        sh "podman --remote build --tag fire/processador:latest"
+        sh "podman --remote build --tag fire/processador:latest ."
         sh "echo construcao terminada"
     }
 
