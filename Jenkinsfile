@@ -9,7 +9,7 @@ node {
     }
 
     stage ('Instalando o servidor Processador') {
-        sh "Instalando o servidor Processador..."
+        sh "echo Instalando o servidor Processador..."
         sh "podman --remote rm -f processador"
         sh "podman --remote run -p 8080:80 --restart unless-stopped --name processador fire/processador:latest"
         sh "echo container Processador instalado"
