@@ -17,7 +17,7 @@ app.include_router(parsers.router)
 
 @app.get("/")
 async def root():
-    return {"message": "Hello Jenkins, I hope you are fine"}
+    return {"message": "Connectivity ok"}
 
 
 @app.get("/hello/{name}")
