@@ -4,7 +4,7 @@ from routers import parsers
 
 app = FastAPI()
 
-origins = ["http://localhost", "http://investjs.ik.ntr", "http://localhost:8080", "hptt://localhost:8000"]
+origins = ["*"]
 
 app.add_middleware(
     CORSMiddleware,
